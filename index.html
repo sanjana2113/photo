@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo gallery</title>
+    
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: whitesmoke;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+}
+.card{
+    height: 500px;
+    margin: 30px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+img{
+    height: 500px;
+    width: 350px;
+    /* margin: 0px; */
+    border-radius: 3px;
+    transition: 5s;
+}
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 107px;
+    background: rgb(27,27,27,.5);
+    color: white;
+    transition: 5s;
+}
+h1{
+    margin: 10px;
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height:220px ;
+    bottom: 106px;
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="taj.jpg" alt="taj">
+            <div class="intro">
+                <h1>TAJ MEHAL</h1>
+                <p>THE <span>TAJ MEHAL</span> is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal.</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="india.jpg" alt="taj">
+            <div class="intro">
+                <h1>INDIA GATE</h1>
+                <p>THE <span>INDIA GATE</span>India Gate, official name Delhi Memorial, originally called All-India War Memorial, monumental sandstone arch in New Delhi, dedicated to the troops of British India who died in wars fought between 1914 and 1919. </p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="qutubh.jpg" alt="taj">
+            <div class="intro">
+                <h1>QUTUB MINAR</h1>
+                <p>THE <span>QUTUB MINAR</span>It is usually thought that the tower is named for Qutb-ud-din Aibak, who began it. It is also possible that it is named after Khwaja Qutbuddin Bakhtiar Kaki a 13th-century sufi saint, because Shamsuddin Iltutmish was a devotee of his. </p>
+        
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
